@@ -1,6 +1,7 @@
 //! Nanobot - A lightweight personal AI assistant framework
 
 pub mod config;
+pub mod cron;
 pub mod providers;
 pub mod session;
 pub mod utils;
