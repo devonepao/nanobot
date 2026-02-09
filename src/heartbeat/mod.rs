@@ -90,6 +90,15 @@ impl HeartbeatService {
     }
 
     /// Check if HEARTBEAT.md has actionable content
+    ///
+    /// Lines that are skipped (considered empty/non-actionable):
+    /// - Empty lines
+    /// - Markdown headers (starting with #)
+    /// - HTML comments (starting with <!--)
+    /// - Empty checkboxes without descriptions: "- [ ]", "* [ ]", "- [x]", "* [x]"
+    ///
+    /// Lines with checkboxes that have task descriptions (e.g., "- [ ] Do something")
+    /// are considered actionable content.
     fn is_heartbeat_empty(content: &Option<String>) -> bool {
         match content {
             None => true,
@@ -281,6 +290,16 @@ mod tests {
         // Mixed content should not be empty
         assert!(!HeartbeatService::is_heartbeat_empty(&Some(
             "# Header\nDo something\n- [ ]".to_string()
+        )));
+
+        // Checkbox with task description should not be empty (actionable content)
+        assert!(!HeartbeatService::is_heartbeat_empty(&Some(
+            "- [ ] Complete this task".to_string()
+        )));
+
+        // Only empty checkboxes (without descriptions) should be skipped
+        assert!(HeartbeatService::is_heartbeat_empty(&Some(
+            "- [ ]\n* [ ]".to_string()
         )));
     }
 
