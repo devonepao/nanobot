@@ -66,6 +66,15 @@ html5ever = "0.29"
 # Async trait support
 async-trait = "0.1"
 
+# Regular expressions
+regex = "1.10"
+
+# URL parsing
+url = "2.5"
+
+# HTML entity decoding
+html-escape = "0.2"
+
 # LLM provider support (via HTTP API calls)
 # Using reqwest for API calls instead of litellm
 

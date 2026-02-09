@@ -1,1 +1,3 @@
-// TODO: Implement agent module
+//! Agent module.
+
+pub mod tools;
