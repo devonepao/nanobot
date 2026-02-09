@@ -1,0 +1,11 @@
+/home/runner/work/nanobot/nanobot/target/debug/deps/mailparse-4cdff63fc0d490f3.d: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/addrparse.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/body.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/dateparse.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/header.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/headers.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/msgidparse.rs
+
+/home/runner/work/nanobot/nanobot/target/debug/deps/libmailparse-4cdff63fc0d490f3.rmeta: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/addrparse.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/body.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/dateparse.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/header.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/headers.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/msgidparse.rs
+
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/lib.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/addrparse.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/body.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/dateparse.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/header.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/headers.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mailparse-0.15.0/src/msgidparse.rs:

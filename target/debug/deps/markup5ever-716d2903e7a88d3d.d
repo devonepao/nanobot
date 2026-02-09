@@ -1,0 +1,15 @@
+/home/runner/work/nanobot/nanobot/target/debug/deps/markup5ever-716d2903e7a88d3d.d: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/data/mod.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/interface/mod.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/interface/tree_builder.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/serialize.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/util/buffer_queue.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/util/smallcharset.rs /home/runner/work/nanobot/nanobot/target/debug/build/markup5ever-085d7c649d02ec6d/out/generated.rs /home/runner/work/nanobot/nanobot/target/debug/build/markup5ever-085d7c649d02ec6d/out/named_entities.rs
+
+/home/runner/work/nanobot/nanobot/target/debug/deps/libmarkup5ever-716d2903e7a88d3d.rmeta: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/data/mod.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/interface/mod.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/interface/tree_builder.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/serialize.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/util/buffer_queue.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/util/smallcharset.rs /home/runner/work/nanobot/nanobot/target/debug/build/markup5ever-085d7c649d02ec6d/out/generated.rs /home/runner/work/nanobot/nanobot/target/debug/build/markup5ever-085d7c649d02ec6d/out/named_entities.rs
+
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/lib.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/data/mod.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/interface/mod.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/interface/tree_builder.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/serialize.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/util/buffer_queue.rs:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/markup5ever-0.14.1/util/smallcharset.rs:
+/home/runner/work/nanobot/nanobot/target/debug/build/markup5ever-085d7c649d02ec6d/out/generated.rs:
+/home/runner/work/nanobot/nanobot/target/debug/build/markup5ever-085d7c649d02ec6d/out/named_entities.rs:
+
+# env-dep:OUT_DIR=/home/runner/work/nanobot/nanobot/target/debug/build/markup5ever-085d7c649d02ec6d/out
