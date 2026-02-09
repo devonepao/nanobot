@@ -1,9 +1,0 @@
-/home/runner/work/nanobot/nanobot/target/debug/deps/zerofrom-b19218f1d8e3e2be.d: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/macro_impls.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/zero_from.rs
-
-/home/runner/work/nanobot/nanobot/target/debug/deps/libzerofrom-b19218f1d8e3e2be.rlib: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/macro_impls.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/zero_from.rs
-
-/home/runner/work/nanobot/nanobot/target/debug/deps/libzerofrom-b19218f1d8e3e2be.rmeta: /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/lib.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/macro_impls.rs /home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/zero_from.rs
-
-/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/lib.rs:
-/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/macro_impls.rs:
-/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.6/src/zero_from.rs:
