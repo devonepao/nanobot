@@ -95,7 +95,7 @@ pub fn get_workspace_path(workspace: Option<&str>) -> io::Result<PathBuf> {
             let home = dirs::home_dir().ok_or_else(|| {
                 io::Error::new(io::ErrorKind::NotFound, "Could not determine home directory")
             })?;
-            home.join(ws_path.strip_prefix("~").unwrap())
+            home.join(ws_path.strip_prefix("~").expect("Path starts with ~"))
         } else {
             ws_path
         }
@@ -234,7 +234,7 @@ pub fn timestamp() -> String {
 /// # Arguments
 ///
 /// * `s` - The string to truncate
-/// * `max_len` - Maximum length (default: 100)
+/// * `max_len` - Maximum length in characters (not bytes)
 /// * `suffix` - Suffix to add if truncated (default: "...")
 ///
 /// # Returns
@@ -253,11 +253,17 @@ pub fn timestamp() -> String {
 /// assert_eq!(long, "hello...");
 /// ```
 pub fn truncate_string(s: &str, max_len: usize, suffix: &str) -> String {
-    if s.len() <= max_len {
+    let char_count = s.chars().count();
+    if char_count <= max_len {
         s.to_string()
     } else {
-        let truncate_at = max_len.saturating_sub(suffix.len());
-        format!("{}{}", &s[..truncate_at], suffix)
+        let suffix_len = suffix.chars().count();
+        let truncate_at = max_len.saturating_sub(suffix_len);
+        let truncated: String = s.chars().take(truncate_at).collect();
+        let mut result = String::with_capacity(truncated.len() + suffix.len());
+        result.push_str(&truncated);
+        result.push_str(suffix);
+        result
     }
 }
 
