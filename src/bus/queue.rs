@@ -125,16 +125,20 @@ impl MessageBus {
     }
 
     /// Number of pending inbound messages.
+    ///
+    /// Note: This method always returns 0 as tokio's mpsc channels do not expose
+    /// queue size. This method is provided for API compatibility with the Python version.
+    /// Consider removing calls to this method if queue size monitoring is needed.
     pub fn inbound_size(&self) -> usize {
-        // Note: mpsc doesn't have qsize(), so we return 0
-        // In practice, this is less important in Rust as we use unbounded channels
         0
     }
 
     /// Number of pending outbound messages.
+    ///
+    /// Note: This method always returns 0 as tokio's mpsc channels do not expose
+    /// queue size. This method is provided for API compatibility with the Python version.
+    /// Consider removing calls to this method if queue size monitoring is needed.
     pub fn outbound_size(&self) -> usize {
-        // Note: mpsc doesn't have qsize(), so we return 0
-        // In practice, this is less important in Rust as we use unbounded channels
         0
     }
 }
