@@ -280,8 +280,28 @@ impl CronService {
         let name = name.into();
         let message = message.into();
 
+        // Generate a short ID (8 chars) for user-friendliness
+        // Check for collisions and regenerate if needed
+        let job_id = {
+            let store = self.store.read().await;
+            let mut id = uuid::Uuid::new_v4().to_string()[..8].to_string();
+            let mut attempts = 0;
+            
+            while store.jobs.iter().any(|j| j.id == id) && attempts < 10 {
+                id = uuid::Uuid::new_v4().to_string()[..8].to_string();
+                attempts += 1;
+            }
+            
+            if attempts == 10 {
+                // Fallback to full UUID if we can't find a unique short ID
+                uuid::Uuid::new_v4().to_string()
+            } else {
+                id
+            }
+        };
+
         let job = CronJob {
-            id: uuid::Uuid::new_v4().to_string()[..8].to_string(),
+            id: job_id,
             name: name.clone(),
             enabled: true,
             schedule: schedule.clone(),
