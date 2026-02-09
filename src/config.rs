@@ -708,7 +708,7 @@ impl Config {
     }
 
     /// Get provider config by name.
-    fn get_provider_by_name(&self, name: &str) -> Option<&ProviderConfig> {
+    pub fn get_provider_by_name(&self, name: &str) -> Option<&ProviderConfig> {
         match name {
             "anthropic" => Some(&self.providers.anthropic),
             "openai" => Some(&self.providers.openai),
