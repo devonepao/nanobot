@@ -417,8 +417,13 @@ async fn cmd_agent(args: AgentArgs) -> Result<()> {
 }
 
 /// Print agent response with formatting
-fn print_agent_response(response: &str, _markdown: bool) -> Result<()> {
+fn print_agent_response(response: &str, markdown: bool) -> Result<()> {
     println!("\n{} {}\n", LOGO, "nanobot".cyan().bold());
+    
+    // TODO: Implement markdown rendering when markdown=true
+    // For now, just print as plain text
+    let _ = markdown; // Suppress unused warning
+    
     println!("{}\n", response);
     Ok(())
 }
