@@ -380,6 +380,19 @@ mod tests {
 
         assert!(parse_session_key("invalid").is_err());
         assert!(parse_session_key("").is_err());
+
+        // Edge cases: empty parts
+        let result_empty_channel = parse_session_key(":chat_id");
+        assert!(result_empty_channel.is_ok()); // splitn will handle this
+        let (ch, id) = result_empty_channel.unwrap();
+        assert_eq!(ch, "");
+        assert_eq!(id, "chat_id");
+
+        let result_empty_id = parse_session_key("channel:");
+        assert!(result_empty_id.is_ok());
+        let (ch2, id2) = result_empty_id.unwrap();
+        assert_eq!(ch2, "channel");
+        assert_eq!(id2, "");
     }
 
     #[test]

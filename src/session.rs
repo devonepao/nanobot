@@ -15,6 +15,8 @@ use tokio::fs;
 use tokio::io::{AsyncBufReadExt, AsyncWriteExt, BufReader};
 use tracing::{debug, warn};
 
+use crate::utils::safe_filename;
+
 /// A message in the conversation history.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Message {
@@ -222,6 +224,7 @@ impl SessionManager {
 
     /// Get the file path for a session.
     fn get_session_path(&self, key: &str) -> PathBuf {
+        // Replace colon with underscore before making safe (e.g., "telegram:123" -> "telegram_123")
         let safe_key = safe_filename(&key.replace(':', "_"));
         self.sessions_dir.join(format!("{}.jsonl", safe_key))
     }
@@ -472,32 +475,10 @@ impl SessionManager {
     }
 }
 
-/// Convert a string to a safe filename.
-///
-/// Replaces unsafe characters with underscores.
-fn safe_filename(name: &str) -> String {
-    let unsafe_chars = ['<', '>', ':', '"', '/', '\\', '|', '?', '*'];
-    let mut result = name.to_string();
-
-    for ch in unsafe_chars {
-        result = result.replace(ch, "_");
-    }
-
-    result.trim().to_string()
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
     use tempfile::TempDir;
-
-    #[test]
-    fn test_safe_filename() {
-        assert_eq!(safe_filename("hello:world"), "hello_world");
-        assert_eq!(safe_filename("test/path"), "test_path");
-        assert_eq!(safe_filename("valid_name"), "valid_name");
-        assert_eq!(safe_filename("a<b>c:d\"e/f\\g|h?i*j"), "a_b_c_d_e_f_g_h_i_j");
-    }
 
     #[test]
     fn test_message_creation() {
